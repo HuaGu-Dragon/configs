@@ -1,0 +1,201 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
+{
+  "scroll_beyond_last_line": "one_page",
+  "show_edit_predictions": true,
+  "agent_servers": {
+    "codex-acp": {
+      "type": "registry",
+    },
+  },
+  "cli_default_open_behavior": "existing_window",
+  "diff_view_style": "unified",
+  "tabs": {
+    "git_status": false,
+  },
+  "status_bar": {
+    "active_language_button": true,
+  },
+  "project_panel": {
+    "button": true,
+    "dock": "left",
+  },
+  "outline_panel": {
+    "dock": "left",
+  },
+  "collaboration_panel": {
+    "dock": "left",
+  },
+  "edit_predictions": {
+    "mode": "subtle",
+  },
+  "indent_guides": {
+    "coloring": "indent_aware",
+    "background_coloring": "indent_aware",
+  },
+  "colorize_brackets": true,
+  "sticky_scroll": {
+    "enabled": true,
+  },
+  "autoscroll_on_clicks": false,
+  "soft_wrap": "editor_width",
+  "vim_mode": false,
+  "git_panel": {
+    "sort_by_path": true,
+    "dock": "left",
+  },
+  "helix_mode": true,
+  "restore_on_startup": "none",
+  "auto_signature_help": false,
+  "inlay_hints": {
+    "enabled": true,
+  },
+  "minimap": {
+    "thumb": "always",
+    "current_line_highlight": "all",
+    "show": "always",
+  },
+  "diagnostics": {
+    "inline": {
+      "enabled": true,
+    },
+  },
+  "agent": {
+    "sidebar_side": "right",
+    "dock": "right",
+    "tool_permissions": {
+      "default": "allow",
+    },
+    "default_profile": "write",
+    "default_model": {
+      "enable_thinking": true,
+      "provider": "copilot_chat",
+      "model": "claude-haiku-4.5",
+    },
+    "inline_assistant_model": {
+      "provider": "copilot_chat",
+      "model": "claude-sonnet-4.5",
+    },
+    "model_parameters": [],
+  },
+  "vertical_scroll_margin": 0.0,
+  "scrollbar": {
+    "show": "never",
+  },
+  "cursor_blink": false,
+  "ui_font_family": ".ZedMono",
+  "buffer_font_family": "JetBrains Mono",
+  "buffer_font_features": {
+    "calt": true,
+  },
+  "buffer_font_fallbacks": ["0xProto Nerd Font Mono"],
+  "vim": {
+    "toggle_relative_line_numbers": true,
+    "use_smartcase_find": true,
+  },
+  "icon_theme": {
+    "mode": "dark",
+    "light": "Zed (Default)",
+    "dark": "Catppuccin Mocha",
+  },
+  "ui_font_size": 16,
+  "buffer_font_size": 15,
+  "theme": {
+    "mode": "dark",
+    "light": "One Light",
+    "dark": "Catppuccin Mocha - No Italics",
+  },
+  "lsp": {
+    "rust-analyzer": {
+      "initialization_options": {
+        "check": {
+          "command": "clippy",
+        },
+        "completion": {
+          "snippets": {
+            "custom": {
+              "Arc::new": {
+                "postfix": "arc",
+                "body": ["Arc::new(${receiver})"],
+                "requires": "std::sync::Arc",
+                "description": "Put the expression into an `Arc`",
+                "scope": "expr",
+              },
+              "Err": {
+                "postfix": "err",
+                "body": "Err(${receiver})",
+                "description": "Wrap the expression in a `Result::Err`",
+                "scope": "expr",
+              },
+              "Some": {
+                "postfix": "some",
+                "body": ["Some(${receiver})"],
+                "description": "Wrap the expression in an `Option::Some`",
+                "scope": "expr",
+              },
+              "Ok": {
+                "postfix": "ok",
+                "body": ["Ok(${receiver})"],
+                "description": "Wrap the expression in an `Result::Ok`",
+                "scope": "expr",
+              },
+              "Rc::new": {
+                "postfix": "rc",
+                "body": ["Rc::new(${receiver})"],
+                "requires": "std::rc::Rc",
+                "description": "Put the expression into an `Rc`",
+                "scope": "expr",
+              },
+              "Box::pin": {
+                "postfix": "pinbox",
+                "body": ["Box::pin(${receiver})"],
+                "requires": "std::boxed::Box",
+                "description": "Put the expression into a pinned `Box`",
+                "scope": "expr",
+              },
+              "vec!": {
+                "postfix": "vec",
+                "body": ["vec![${receiver}]"],
+                "description": "vec![]",
+                "scope": "expr",
+              },
+              "Paren": {
+                "postfix": "paren",
+                "body": "(${receiver})",
+                "description": "Wrap the expression in a parentheses",
+                "scope": "expr",
+              },
+            },
+          },
+        },
+        "inlayHints": {
+          "maxLength": null,
+          "lifetimeElisionHints": {
+            "enable": "skip_trivial",
+            "useParameterNames": true,
+          },
+          "closureReturnTypeHints": {
+            "enable": "always",
+          },
+        },
+      },
+    },
+  },
+  "terminal": {
+    "font_family": "0xProto Nerd Font Mono",
+    "shell": {
+      "with_arguments": {
+        "title_override": "Fish",
+        "program": "E:\\msys64\\Fish.cmd",
+        "args": ["-msys2", "-defterm", "-here", "-full-path", "-no-start"],
+      },
+    },
+  },
+  "proxy": "socks5://127.0.0.1:10808",
+}
