@@ -33,6 +33,7 @@
     "dock": "left",
   },
   "edit_predictions": {
+    "provider": "copilot",
     "mode": "subtle",
   },
   "indent_guides": {
