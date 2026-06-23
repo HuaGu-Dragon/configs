@@ -8,6 +8,10 @@ true-color = true
 end-of-line-diagnostics = "hint"
 bufferline = "multiple"
 
+[editor.lsp]
+display-progress-messages = true
+display-inlay-hints = true
+
 [editor.inline-diagnostics]
 cursor-line = "warning"
 
