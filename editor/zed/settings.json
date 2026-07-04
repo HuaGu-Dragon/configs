@@ -7,6 +7,9 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "gutter": {
+    "line_numbers": true,
+  },
   "scroll_beyond_last_line": "one_page",
   "show_edit_predictions": true,
   "agent_servers": {
@@ -33,7 +36,7 @@
     "dock": "left",
   },
   "edit_predictions": {
-    "provider": "copilot",
+    "provider": "zed",
     "mode": "subtle",
   },
   "indent_guides": {
@@ -48,6 +51,7 @@
   "soft_wrap": "editor_width",
   "vim_mode": false,
   "git_panel": {
+    "tree_view": true,
     "sort_by_path": true,
     "dock": "left",
   },
@@ -75,9 +79,10 @@
     },
     "default_profile": "write",
     "default_model": {
+      "effort": "medium",
       "enable_thinking": true,
-      "provider": "copilot_chat",
-      "model": "claude-haiku-4.5",
+      "provider": "zed.dev",
+      "model": "gpt-5.5",
     },
     "inline_assistant_model": {
       "provider": "copilot_chat",
@@ -117,6 +122,19 @@
       "initialization_options": {
         "check": {
           "command": "clippy",
+          // "extraArgs": [
+          //   "--",
+          //   "-D",
+          //   "clippy::all",
+          //   "-D",
+          //   "clippy::pedantic",
+          //   "-D",
+          //   "clippy::restriction",
+          //   "-D",
+          //   "clippy::nursery",
+          //   "-D",
+          //   "clippy::cargo",
+          // ],
         },
         "completion": {
           "snippets": {
