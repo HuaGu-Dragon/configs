@@ -210,9 +210,9 @@
     "font_family": "0xProto Nerd Font Mono",
     "shell": {
       "with_arguments": {
-        "title_override": "Fish",
-        "program": "E:\\msys64\\Fish.cmd",
-        "args": ["-msys2", "-defterm", "-here", "-full-path", "-no-start"],
+        "title_override": "Nushell",
+        "program": "nu",
+        "args": [],
       },
     },
   },
