@@ -10,7 +10,7 @@
   "gutter": {
     "line_numbers": true,
   },
-  "scroll_beyond_last_line": "one_page",
+  "scroll_beyond_last_line": "vertical_scroll_margin",
   "show_edit_predictions": true,
   "agent_servers": {
     "codex-acp": {
@@ -52,11 +52,11 @@
   "vim_mode": false,
   "git_panel": {
     "tree_view": true,
-    "sort_by_path": true,
+    "sort_by": "path",
     "dock": "left",
   },
   "helix_mode": true,
-  "restore_on_startup": "none",
+  "restore_on_startup": "launchpad",
   "auto_signature_help": false,
   "inlay_hints": {
     "enabled": true,
@@ -79,7 +79,7 @@
     },
     "default_profile": "write",
     "default_model": {
-      "effort": "medium",
+      "effort": "xhigh",
       "enable_thinking": true,
       "provider": "zed.dev",
       "model": "gpt-5.5",
@@ -90,7 +90,7 @@
     },
     "model_parameters": [],
   },
-  "vertical_scroll_margin": 0.0,
+  "vertical_scroll_margin": 10,
   "scrollbar": {
     "show": "never",
   },
