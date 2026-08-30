@@ -7,8 +7,8 @@ if status is-interactive
     fish_config theme choose catppuccin-mocha --color-theme=dark
     bind --mode insert --sets-mode default jj repaint
     alias ls="eza --icons=always"
+    tv init fish | source
 end
 set -gx PATH $PATH ~/.cargo/bin
-fzf --fish | source
 zoxide init --cmd cd fish | source
 starship init fish | source
