@@ -7,6 +7,9 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "cursor_animation": {
+    "enabled": true
+  },
   "gutter": {
     "line_numbers": true,
   },
@@ -208,6 +211,7 @@
   },
   "terminal": {
     "font_family": "0xProto Nerd Font Mono",
+    "detect_venv": "off",
     "shell": {
       "with_arguments": {
         "title_override": "Nushell",
