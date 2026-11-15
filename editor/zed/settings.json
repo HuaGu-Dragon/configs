@@ -75,7 +75,6 @@
     },
   },
   "agent": {
-    "sidebar_side": "right",
     "dock": "right",
     "tool_permissions": {
       "default": "allow",
