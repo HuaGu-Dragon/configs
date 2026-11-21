@@ -104,6 +104,7 @@
   },
   "buffer_font_fallbacks": ["0xProto Nerd Font Mono"],
   "vim": {
+    "use_system_clipboard": "never",
     "toggle_relative_line_numbers": true,
     "use_smartcase_find": true,
   },
@@ -211,13 +212,5 @@
   "terminal": {
     "font_family": "0xProto Nerd Font Mono",
     "detect_venv": "off",
-    "shell": {
-      "with_arguments": {
-        "title_override": "Nushell",
-        "program": "nu",
-        "args": [],
-      },
-    },
   },
-  "proxy": "socks5://127.0.0.1:10808",
 }
